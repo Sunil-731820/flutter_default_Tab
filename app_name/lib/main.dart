@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 5,
+        length: 7,
         child: Scaffold(
           appBar: AppBar(
             bottom: TabBar(
@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
                 Tab(icon: Icon(Icons.music_video)),
                 Tab(icon: Icon(Icons.camera_alt)),
                 Tab(icon: Icon(Icons.grade)),
-                Tab(icon: Icon(Icons.email))
+                Tab(icon: Icon(Icons.email)),
+                Tab(icon: Icon(Icons.add)),
+                Tab(icon: Icon(Icons.alarm))
               ],
             ),
             title: Text("DefaultTab"),
@@ -32,6 +34,8 @@ class MyApp extends StatelessWidget {
               Icon(Icons.camera_alt, size: 100, semanticLabel: "camera"),
               Icon(Icons.grade, size: 100),
               Icon(Icons.email, size: 100),
+              Icon(Icons.add, size: 100),
+              Icon(Icons.alarm, size: 100)
             ],
           ),
         ),
